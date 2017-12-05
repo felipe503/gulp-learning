@@ -6,28 +6,70 @@ $font-normal: 'Roboto', sans-serif;
 $font-bold: 'Roboto Bold', sans-serif;
 $font: $font-normal;
 $primary-color: #333;
+$primary-color-light: #f2f2f2;
+$logo-color: #fff;
 $header-image:'../images/redriver72-web.jpg';
+$pimg2:'https://static.pexels.com/photos/238622/pexels-photo-238622.jpeg';
+$pimg3:'https://static.pexels.com/photos/302804/pexels-photo-302804.jpeg';
+$background-light: #f4f4f4;
+$background-dark: #333;
 
-body{
-  font: 100% $font;
+body, html{
+  font: 16px $font;
+  font-weight:400;
   color: $primary-color;
+  height:100%;
+  margin:0;
+  line-height:1.8em;
 }
-
 
 /*header*/
-header{
-  background: url($header-image) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+.pimg1,.pimg2,.pimg3{
+
+  position: relative;
+  opacity: 0.80;
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+.pimg1{
+  background-image: url($header-image);
+  min-height: 100%;
+}
+.pimg2{
+  background-image: url($pimg2);
+  min-height: 400px;
+}
+.pimg3{
+  background-image: url($pimg3);
+  min-height: 400px;
 }
 .brand__logo{
-  font:110% $font-bold;
-  /*text-transform: uppercase;*/
-  color:white;
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align: center;
+  font-family:$font-light;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color:$logo-color;
 }
-header .brand__logo{
-  padding-top:60px;
-  padding-bottom: 120px;
+section{
+  text-align: center;
+  padding:50px 80px;
+}
+.section-dark{
+  background-color: $background-light;
+
+}
+.section-light{
+  background-color: $background-dark;
+  color: $primary-color-light;
+}
+@media screen and (max-width:760px) {
+  .pimg1,.pimg2,.pimg3{
+    background-attachment: scroll;
+  }
 }

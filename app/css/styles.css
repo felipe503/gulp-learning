@@ -1,21 +1,54 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,900");
-body {
-  font: 100% "Roboto", sans-serif;
-  color: #333; }
+body, html {
+  font: 16px "Roboto", sans-serif;
+  font-weight: 400;
+  color: #333;
+  height: 100%;
+  margin: 0;
+  line-height: 1.8em; }
 
 /*header*/
-header {
-  background: url("../images/redriver72-web.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+.pimg1, .pimg2, .pimg3 {
+  position: relative;
+  opacity: 0.80;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.pimg1 {
+  background-image: url("../images/redriver72-web.jpg");
+  min-height: 100%; }
+
+.pimg2 {
+  background-image: url("https://static.pexels.com/photos/238622/pexels-photo-238622.jpeg");
+  min-height: 400px; }
+
+.pimg3 {
+  background-image: url("https://static.pexels.com/photos/302804/pexels-photo-302804.jpeg");
+  min-height: 400px; }
 
 .brand__logo {
-  font: 110% "Roboto Bold", sans-serif;
-  /*text-transform: uppercase;*/
-  color: white; }
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto Light", sans-serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #fff; }
 
-header .brand__logo {
-  padding-top: 60px;
-  padding-bottom: 120px; }
+section {
+  text-align: center;
+  padding: 50px 80px; }
+
+.section-dark {
+  background-color: #f4f4f4; }
+
+.section-light {
+  background-color: #333;
+  color: #f2f2f2; }
+
+@media screen and (max-width: 760px) {
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment: scroll; } }
