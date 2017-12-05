@@ -51,7 +51,8 @@ body, html{
   top:50%;
   width:100%;
   text-align: center;
-  font-family:$font-light;
+  font-family: $font-light;
+  font-size: 47px;
   letter-spacing: 8px;
   text-transform: uppercase;
   color:$logo-color;
@@ -61,12 +62,12 @@ section{
   padding:50px 80px;
 }
 .section-dark{
-  background-color: $background-light;
-
-}
-.section-light{
   background-color: $background-dark;
   color: $primary-color-light;
+}
+.section-light{
+  background-color: $background-light;
+
 }
 @media screen and (max-width:760px) {
   .pimg1,.pimg2,.pimg3{
