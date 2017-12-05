@@ -1,0 +1,33 @@
+// styles.scss
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900');
+
+$font-light: 'Roboto Light', sans-serif;
+$font-normal: 'Roboto', sans-serif;
+$font-bold: 'Roboto Bold', sans-serif;
+$font: $font-normal;
+$primary-color: #333;
+$header-image:'../images/redriver72-web.jpg';
+
+body{
+  font: 100% $font;
+  color: $primary-color;
+}
+
+
+/*header*/
+header{
+  background: url($header-image) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.brand__logo{
+  font:110% $font-bold;
+  /*text-transform: uppercase;*/
+  color:white;
+}
+header .brand__logo{
+  padding-top:60px;
+  padding-bottom: 120px;
+}
