@@ -40,8 +40,8 @@ body, html {
   color: #fff; }
 
 section {
-  text-align: center;
-  padding: 50px 80px; }
+  text-align: left;
+  padding: 20px 30px; }
 
 .section-dark {
   background-color: #333;
@@ -67,6 +67,9 @@ section {
 
 /*dektop*/
 @media screen and (min-width: 768px) {
+  section {
+    text-align: center;
+    padding: 50px 80px; }
   .pimg1, .pimg2, .pimg3 {
     background-attachment: fixed; }
   .mazonry {

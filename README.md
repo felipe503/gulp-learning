@@ -43,7 +43,7 @@ Container
 Items
 ```
 .item { /* Masonry bricks or child elements */
-    background-color: $primary-color-light;
+    background-color: #f2f2f2;
     display: inline-block;
     margin: 0 0 1em;
     width: 100%;

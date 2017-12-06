@@ -1,19 +1,5 @@
 // styles.scss
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900');
-
-$font-light: 'Roboto Light', sans-serif;
-$font-normal: 'Roboto', sans-serif;
-$font-bold: 'Roboto Bold', sans-serif;
-$font: $font-normal;
-$primary-color: #333;
-$primary-color-light: #f2f2f2;
-$logo-color: #fff;
-$header-image:'../images/redriver72-web.jpg';
-$pimg2:'https://static.pexels.com/photos/238622/pexels-photo-238622.jpeg';
-$pimg3:'https://static.pexels.com/photos/302804/pexels-photo-302804.jpeg';
-$background-light: #f4f4f4;
-$background-dark: #333;
-$break-point-mobile: '768px';
+@import "variables.scss";
 body, html{
   font: 16px $font;
   font-weight:400;
@@ -58,8 +44,8 @@ body, html{
   color:$logo-color;
 }
 section{
-  text-align: center;
-  padding:50px 80px;
+  text-align: left;
+  padding:20px 30px;
 }
 .section-dark{
   background-color: $background-dark;
@@ -86,6 +72,10 @@ section{
 }
 /*dektop*/
 @media screen and (min-width: $break-point-mobile) {
+  section{
+    text-align: center;
+    padding:50px 80px;
+  }
   .pimg1,.pimg2,.pimg3{
     background-attachment: fixed;
   }
