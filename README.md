@@ -22,3 +22,9 @@ Rules in element
   background-attachment: fixed;
 }
 ```
+Mobile devices
+```
+@media screen and (min-width:768px){
+  background-attachment: scroll;
+}
+```
