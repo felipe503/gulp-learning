@@ -25,7 +25,9 @@ Rules in element
 Desktop
 ```
 @media screen and (min-width:768px){
-  background-attachment: scroll;
+  .element{
+    background-attachment: scroll;
+  }
 }
 ```
 
@@ -53,9 +55,11 @@ Items
 ```
 Desktop
 ```
-.mazonry{
-  /*Number of columns desired*/
-  column-count: 3;
-  column-gap: 0;
+@media screen and (min-width:768px){
+  .mazonry{
+    /*Number of columns desired*/
+    column-count: 3;
+    column-gap: 0;
+  }
 }
 ```
