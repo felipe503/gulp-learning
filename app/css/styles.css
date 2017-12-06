@@ -50,6 +50,25 @@ section {
 .section-light {
   background-color: #f4f4f4; }
 
-@media screen and (min-width: 760px) {
+/*mazonry*/
+.mazonry {
+  column-count: 1;
+  column-gap: 0; }
+
+.item {
+  /* Masonry bricks or child elements */
+  background-color: #f2f2f2;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%; }
+
+.item img {
+  width: 100%; }
+
+/*dektop*/
+@media screen and (min-width: 768px) {
   .pimg1, .pimg2, .pimg3 {
-    background-attachment: fixed; } }
+    background-attachment: fixed; }
+  .mazonry {
+    column-count: 3;
+    column-gap: 0.2em; } }

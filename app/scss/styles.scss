@@ -13,7 +13,7 @@ $pimg2:'https://static.pexels.com/photos/238622/pexels-photo-238622.jpeg';
 $pimg3:'https://static.pexels.com/photos/302804/pexels-photo-302804.jpeg';
 $background-light: #f4f4f4;
 $background-dark: #333;
-
+$break-point-mobile: '768px';
 body, html{
   font: 16px $font;
   font-weight:400;
@@ -67,10 +67,30 @@ section{
 }
 .section-light{
   background-color: $background-light;
-
 }
-@media screen and (min-width:760px) {
+
+
+/*mazonry*/
+.mazonry{
+  column-count: 1;
+  column-gap: 0;
+}
+.item { /* Masonry bricks or child elements */
+    background-color: $primary-color-light;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
+.item img{
+  width:100%;
+}
+/*dektop*/
+@media screen and (min-width: $break-point-mobile) {
   .pimg1,.pimg2,.pimg3{
     background-attachment: fixed;
+  }
+  .mazonry{
+    column-count: 3;
+    column-gap: 0.2em;
   }
 }

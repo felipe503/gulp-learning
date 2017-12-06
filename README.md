@@ -22,9 +22,40 @@ Rules in element
   background-attachment: fixed;
 }
 ```
-Mobile devices
+Desktop
 ```
 @media screen and (min-width:768px){
   background-attachment: scroll;
+}
+```
+
+## Mazonry
+
+Container
+```
+.mazonry{
+  column-count: 1;
+  column-gap: 0;
+}
+```
+Items
+```
+.item { /* Masonry bricks or child elements */
+    background-color: $primary-color-light;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
+.item img{
+  /*adding responsive to images*/
+  width:100%;
+}
+```
+Desktop
+```
+.mazonry{
+  /*Number of columns desired*/
+  column-count: 3;
+  column-gap: 0;
 }
 ```
