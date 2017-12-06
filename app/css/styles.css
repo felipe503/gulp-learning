@@ -14,7 +14,7 @@ body, html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: scroll; }
 
 .pimg1 {
   background-image: url("../images/redriver72-web.jpg");
@@ -50,6 +50,6 @@ section {
 .section-light {
   background-color: #f4f4f4; }
 
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 760px) {
   .pimg1, .pimg2, .pimg3 {
-    background-attachment: scroll; } }
+    background-attachment: fixed; } }
